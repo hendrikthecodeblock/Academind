@@ -1,8 +1,14 @@
 const defaultResult = 0;
 let currentResult = defaultResult;
 
-currentResult = (currentResult + 10) * 3 / 2 - 1;
+function add() {
+  currentResult = currentResult + userInput.value;
+  outputResult(currentResult, '');
+  // alert('The resulst is ' + result);
+}
 
-let calculationDescription = '(' + defaultResult + ' + 10) * 3 / 2 - 1';
+addBtn.addEventListener('click', add);
 
-outputResult(currentResult, calculationDescription);
+// currentResult = add(1, 2);
+
+// let calculationDescription = `( ${defaultResult} + 10) * 3 / 2 - 1`;
